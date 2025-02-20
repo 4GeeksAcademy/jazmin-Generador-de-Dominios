@@ -1,15 +1,15 @@
-let pronoun = ['the', 'our'];
-let adj = ['great', 'big'];
-let noun = ['jogger', 'racoon'];
+let pronouns = ['the', 'our'];
+let adjs = ['great', 'big'];
+let nouns = ['jogger', 'racoon'];
 
 let mezclaArrays = [];
 let count = 1;
 
-for (let elementP of pronoun) {
-    for (let elementA of adj) {
-        for (let elementN of noun) {
-            let links = `${elementP}${elementA}${elementN}.com`;
-            mezclaArrays.push(`${count}. ${links}`);
+for (let pronoun of pronouns) {
+    for (let adj of adjs) {
+        for (let noun of nouns) {
+            let links = `${pronoun}${adj}${noun}.com`;
+            mezclaArrays.push(`${count}.${links}`);
             count++;
         }
     }
